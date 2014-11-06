@@ -1,0 +1,50 @@
+extends layout
+
+block content
+	nav(class="navbar navbar-inverse navbar-fixed-top")
+		div(class="container-fluid")
+			div(class="navbar-header")
+				img(src="/images/circle-white-on-blue.png" height="50px")
+
+	div(class="container-fluid dashboard")
+		div(class="row")
+			div(class="col-md-12 main")
+
+				div(class="row")
+					div(class="col-md-4 widget" id="humidity")
+						h4 Luftfeuchtigkeit
+						p(class="text-muted") 0 %
+
+					div(class="col-md-4 widget" id="temperature")
+						h4 Temperatur
+						p(class="text-muted") 0 °C
+
+					div(class="col-md-4 widget" id="pressure")
+						h4 Luftdruck
+						p(class="text-muted") 0 hPa
+
+
+		div(class="row")
+			div(class="col-md-12 main")
+
+				div(class="row")
+					div(class="col-md-4 widget" id="distance")
+						h4 Distanz
+						p(class="text-muted") 0
+
+					div(class="col-md-4 widget" id="movement")
+						h4 Bewegung
+						p(class="text-muted") 0
+
+					div(class="col-md-4 widget" id="rssi")
+						h4 Phone Bluetooth
+						p(class="text-muted") 0
+
+
+		div(class="row")
+			div(class="col-md-12 main")
+
+				div(class="row")
+					div(class="col-md-4 widget" id="light")
+						h4 Lichtstärke
+						p(class="text-muted") 0 Lux
